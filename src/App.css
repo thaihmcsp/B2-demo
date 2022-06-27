@@ -1,7 +1,11 @@
+
+
 .App {
   text-align: center;
 }
-
+p{
+    text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +32,21 @@
   color: #61dafb;
 }
 
+.friend{
+    display: flex;
+    justify-content: center;
+}
+.friend img {
+    height: 50px;
+    margin: 10px;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

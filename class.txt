@@ -1,0 +1,24 @@
+class component là object
+
+constructer             kế thừa props truyền xuống từ component cha
+                        ghi đè state
+
+
+setState trong class component sẽ update state được yêu cầu và giữ nguyên các data còn lại
+setState trong function component sẽ xóa state cũ và ghi đè state mới vào          
+
+khi viết các chức năng trong class component mà dùng function thì phải bind để sử dụng
+
+khi viết các chức năng trong class component thì sử dụng arrow function không phải bind lại
+==============================================================
+
+life cycle              vòng đời của component từ khi được hiển thị đến khi bị gỡ đi
+
+Mounting                thời điểm khi component bắt đầu được gán vào root
+    componentDidMount   chỉ chạy 1 lần duy nhất khi component được sử dụng (gán vào root)
+
+Updating                thời điểm khi component rerender (state thay đổi)
+    componentDidUpdate  chạy mỗi khi có sự thay đổi về props, state
+                        thường được dùng để gọi data mỗi khi có sự thay đổi
+
+Unmounting              thời điểm khi component bị gỡ ra khỏi giao diện
